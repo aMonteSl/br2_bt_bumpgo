@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<root main_tree_to_execute="BehaviorTree">
+    <!-- ////////// -->
+    <BehaviorTree ID="BehaviorTree">
+        <ReactiveSequence>
+            <ReactiveFallback>
+                <Condition ID="IsObject"/>
+                <Action ID="SearchObject"/>
+            </ReactiveFallback>
+            <Action ID="FollowObject"/>
+        </ReactiveSequence>
+    </BehaviorTree>
+    <!-- ////////// -->
+    <TreeNodesModel>
+        <Action ID="FollowObject"/>
+        <Condition ID="IsObject"/>
+        <Action ID="SearchObject"/>
+    </TreeNodesModel>
+    <!-- ////////// -->
+</root>
